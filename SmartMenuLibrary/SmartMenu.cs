@@ -51,25 +51,25 @@ namespace SmartMenuLibrary
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + FunctionLibrary.Functions.DoThis());
+                    Console.WriteLine("\n" + "DoThis");
                 }
                 else if (userInput == "2")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + FunctionLibrary.Functions.DoThat());
+                    Console.WriteLine("\n" + "DoThat");
                 }
                 else if (userInput == "3")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + FunctionLibrary.Functions.DoSomething(userInput));
+                    Console.WriteLine("\n" + "DoSomething");
                 }
                 else if (userInput == "4")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + FunctionLibrary.Functions.GetTheAnswerToLifeTheUniverseAndEverything());
+                    Console.WriteLine("\n" + "42");
                 }
                 else if (userInput == "0")
                 {
