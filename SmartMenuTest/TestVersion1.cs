@@ -8,8 +8,9 @@ namespace SmartMenuTest
     public class TestVersion1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void loadMenu()
         {
+            Assert.AreEqual();
         }
     }
 }
