@@ -12,24 +12,28 @@ namespace SmartMenuLibrary
         string[] englishTxt;
         int[] callID;
         string userInput = null, userInputSprog = null;
+        int counter;
         public void LoadMenu(string path)
         {
 
             string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path + "");
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
             englishTxt = heleTxt.Skip(heleTxt.Length / 2).ToArray();
-            callID = new int[danskTxt.Length - 2];
 
             for (int i = 0; i < danskTxt.Length; i++)
             {
-                int j = 0;
                 if (danskTxt[i].Contains(';'))
                 {
+                    counter++;
                     string[] splitter = danskTxt[i].Split(';');
                     danskTxt[i] = splitter[0];
-                    callID[j] = int.Parse(splitter[1]);
-                    j++;
                 }
+            }
+
+            callID = new int[counter];
+            for (int i = 0; i < counter; i++)
+            {
+                callID[i] = i + 1;
             }
         }
 
@@ -51,25 +55,25 @@ namespace SmartMenuLibrary
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + "DoThis");
+                    Console.WriteLine("\nDoThis");
                 }
                 else if (userInput == "2")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + "DoThat");
+                    Console.WriteLine("\nDoThat");
                 }
                 else if (userInput == "3")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + "DoSomething");
+                    Console.WriteLine("\nDoSomething(userInput)");
                 }
                 else if (userInput == "4")
                 {
                     Console.Clear();
                     printMenu(userInputSprog);
-                    Console.WriteLine("\n" + "42");
+                    Console.WriteLine("\nGetTheAnswerToLifeTheUniverseAndEverything");
                 }
                 else if (userInput == "0")
                 {
@@ -99,6 +103,7 @@ namespace SmartMenuLibrary
         {
             if (lang == "d")
             {
+                Console.Clear();
                 Console.WriteLine("Du har valgt dansk\n");
                 for (int i = 2; i < danskTxt.Length; i++)
                 {
@@ -108,6 +113,7 @@ namespace SmartMenuLibrary
             }
             else if (lang == "e")
             {
+                Console.Clear();
                 Console.WriteLine("You have chosen English\n");
                 for (int i = 2; i < englishTxt.Length; i++)
                 {
