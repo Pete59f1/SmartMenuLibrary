@@ -9,5 +9,9 @@ namespace SmartMenuLibrary
 {
     class Binding
     {
+        public void chooseFucntion(int ID)
+        {
+
+        }
     }
 }
