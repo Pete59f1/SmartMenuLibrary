@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FunctionLibrary;
+using CalculatorLibrary;
 
 namespace SmartMenuLibrary
 {
@@ -11,7 +12,9 @@ namespace SmartMenuLibrary
     {
         public void chooseFucntion(string callID)
         {
+            double[] numbers = new double[] {4.5, 90.2, 2.9, 15.8, 938.0};
             SmartMenu smart = new SmartMenu();
+
             if(smart.bind == 1)
             {
                 do
@@ -44,9 +47,54 @@ namespace SmartMenuLibrary
                     }
                 } while (callID != "0");
             }
+
             else if(smart.bind == 2)
             {
-                //Tilføj calculator functions!!
+                do
+                {
+                    switch (callID)
+                    {
+                        case "1":
+                            Calculator.Add(int.Parse(callID), int.Parse(callID));
+                            break;
+
+                        case "2":
+                            Calculator.Subtract(int.Parse(callID), int.Parse(callID));
+                            break;
+
+                        case "3":
+                            Calculator.Multiply(int.Parse(callID), int.Parse(callID));
+                            break;
+
+                        case "4":
+                            Calculator.Divide(int.Parse(callID), int.Parse(callID));
+                            break;
+
+                        case "5":
+                            Calculator.Sum(numbers);
+                            break;
+
+                        case "6":
+                            Calculator.Minimum(numbers);
+                            break;
+
+                        case "7":
+                            Calculator.Maximum(numbers);
+                            break;
+
+                        case "8":
+                            Calculator.Average(numbers);
+                            break;
+
+                        case "0":
+                            Console.WriteLine("Stopping program");
+                            break;
+
+                        default:
+                            Console.WriteLine("Don't understand");
+                            break;
+                    }
+                } while (callID != "0");
             }
             
         }

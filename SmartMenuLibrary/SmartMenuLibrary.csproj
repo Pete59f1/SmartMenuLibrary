@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CalculatorLibrary">
+      <HintPath>..\..\CalculatorLibrary\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="FunctionLibrary">
       <HintPath>..\..\SmartMenuApp Projekt\FunctionLibrary\bin\Debug\FunctionLibrary.dll</HintPath>
     </Reference>
