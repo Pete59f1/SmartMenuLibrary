@@ -25,7 +25,7 @@ namespace SmartMenuLibrary
                         break;
 
                     case "3":
-                        Functions.DoSomething(callID);
+                        Functions.DoSomething("Did something");
                         break;
 
                     case "4":
