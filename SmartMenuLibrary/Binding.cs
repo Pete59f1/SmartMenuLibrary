@@ -9,7 +9,6 @@ namespace SmartMenuLibrary
 {
     class Binding
     {
-        Functions func = new Functions();
         public void chooseFucntion(string callID)
         {
             do
