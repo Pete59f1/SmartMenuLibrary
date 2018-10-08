@@ -13,8 +13,17 @@ namespace SmartMenuLibrary
         int[] callID;
         string userInput = null, userInputSprog = null;
         int counter;
+        public int bind = 0;
         public void LoadMenu(string path)
         {
+            if(path == "MenuSpec.txt")
+            {
+                bind = 1;
+            }
+            else if(path == "CalcMenu.txt")
+            {
+                bind = 2;
+            }
 
             string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path);
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
