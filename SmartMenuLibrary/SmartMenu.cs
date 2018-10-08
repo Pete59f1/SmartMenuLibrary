@@ -48,54 +48,16 @@ namespace SmartMenuLibrary
 
             } while (userInputSprog != "d" && userInputSprog != "e");
 
+            Binding bind = new Binding();
+
             do
             {
                 userInput = Console.ReadLine();
-                if (userInput == "1")
-                {
-                    Console.Clear();
-                    printMenu(userInputSprog);
-                    Console.WriteLine("\nDoThis");
-                }
-                else if (userInput == "2")
-                {
-                    Console.Clear();
-                    printMenu(userInputSprog);
-                    Console.WriteLine("\nDoThat");
-                }
-                else if (userInput == "3")
-                {
-                    Console.Clear();
-                    printMenu(userInputSprog);
-                    Console.WriteLine("\nDoSomething(userInput)");
-                }
-                else if (userInput == "4")
-                {
-                    Console.Clear();
-                    printMenu(userInputSprog);
-                    Console.WriteLine("\nGetTheAnswerToLifeTheUniverseAndEverything");
-                }
-                else if (userInput == "0")
-                {
-                    Console.Clear();
-                    printMenu(userInputSprog);
-                    Console.WriteLine("\nAfslutter program - Stopping program");
-                }
-                else
-                {
-                    if (userInputSprog == "d")
-                    {
-                        Console.Clear();
-                        printMenu(userInputSprog);
-                        Console.WriteLine("\nDu har ikke valgt et gyldigt menu punkt. Prøv igen");
-                    }
-                    else if (userInputSprog == "e")
-                    {
-                        Console.Clear();
-                        printMenu(userInputSprog);
-                        Console.WriteLine("\nYou have not selected a valid menu point. Try again");
-                    }
-                }
+
+                Console.Clear();
+                printMenu(userInputSprog);
+                bind.chooseFucntion(userInput);
+                
             } while (userInput != "0");
         }
 
