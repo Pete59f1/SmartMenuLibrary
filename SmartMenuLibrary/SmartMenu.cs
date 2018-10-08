@@ -16,7 +16,7 @@ namespace SmartMenuLibrary
         public void LoadMenu(string path)
         {
 
-            string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path + "");
+            string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path);
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
             englishTxt = heleTxt.Skip(heleTxt.Length / 2).ToArray();
 
