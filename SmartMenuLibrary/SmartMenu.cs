@@ -11,7 +11,7 @@ namespace SmartMenuLibrary
         string[] danskTxt;
         string[] englishTxt;
         int[] callID;
-        string userInput = null, userInputSprog = null;
+        public string userInput = null, userInputSprog = null;
         int counter;
         public int bind = 0;
         public void LoadMenu(string path)

@@ -1,10 +1,20 @@
-﻿Calculator Menu
-Add;1
-Subtract;2
-Multiply;3
-Divide;4
+﻿Dansk Version
+Vælg menu punkt mellem 1 og 8 eller 0 for at afslutte
+Plus;1
+Minus;2
+Gange;3
+Dividere;4
 Sum;5
 Minimum;6
 Maximum;7
-Average;8
-Expression;9
+Gennemsnit;8
+English Version
+Choose menu item between 1 and 8 or 0 to stop program
+Add
+Subtract
+Multiply
+Divide
+Sum
+Minimum
+Maximum
+Average

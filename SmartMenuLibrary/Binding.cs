@@ -38,11 +38,25 @@ namespace SmartMenuLibrary
                             break;
 
                         case "0":
-                            Console.WriteLine("Stopping program");
+                            if(smart.userInputSprog == "d")
+                            {
+                                Console.WriteLine("Stopper program");
+                            }
+                            else if(smart.userInputSprog == "e")
+                            {
+                                Console.WriteLine("Stopping program");
+                            }
                             break;
 
                         default:
-                            Console.WriteLine("Don't understand");
+                            if(smart.userInputSprog == "d")
+                            {
+                                Console.WriteLine("Forstår ikke");
+                            }
+                            else if(smart.userInputSprog == "e")
+                            {
+                                Console.WriteLine("Don't understand");
+                            }
                             break;
                     }
                 } while (callID != "0");
@@ -87,11 +101,25 @@ namespace SmartMenuLibrary
                             break;
 
                         case "0":
-                            Console.WriteLine("Stopping program");
+                            if (smart.userInputSprog == "d")
+                            {
+                                Console.WriteLine("Stopper program");
+                            }
+                            else if (smart.userInputSprog == "e")
+                            {
+                                Console.WriteLine("Stopping program");
+                            }
                             break;
 
                         default:
-                            Console.WriteLine("Don't understand");
+                            if (smart.userInputSprog == "d")
+                            {
+                                Console.WriteLine("Forstår ikke");
+                            }
+                            else if (smart.userInputSprog == "e")
+                            {
+                                Console.WriteLine("Don't understand");
+                            }
                             break;
                     }
                 } while (callID != "0");
