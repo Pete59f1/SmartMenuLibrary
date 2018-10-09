@@ -1,20 +1,20 @@
 ﻿Dansk Version
 Vælg menu punkt mellem 1 og 8 eller 0 for at afslutte
-Plus;1
-Minus;2
-Gange;3
-Dividere;4
-Sum;5
-Minimum;6
-Maximum;7
-Gennemsnit;8
+1. Plus;1
+2. Minus;2
+3. Gange;3
+4. Dividere;4
+5. Sum;5
+6. Minimum;6
+7. Maximum;7
+8. Gennemsnit;8
 English Version
 Choose menu item between 1 and 8 or 0 to stop program
-Add
-Subtract
-Multiply
-Divide
-Sum
-Minimum
-Maximum
-Average
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Sum
+6. Minimum
+7. Maximum
+8. Average
