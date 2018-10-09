@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace SmartMenuLibrary
 {
@@ -25,7 +26,7 @@ namespace SmartMenuLibrary
                 bind = 2;
             }
 
-            string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path);
+            string[] heleTxt = File.ReadAllLines(path);
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
             englishTxt = heleTxt.Skip(heleTxt.Length / 2).ToArray();
 
