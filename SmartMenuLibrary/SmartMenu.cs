@@ -17,16 +17,17 @@ namespace SmartMenuLibrary
         public int bind = 0;
         public void LoadMenu(string path)
         {
-            if(path == "MenuSpec.txt")
+            string[] heleTxt = File.ReadAllLines(path);
+
+            if (heleTxt[0] == "Spec Dansk version")
             {
                 bind = 1;
             }
-            else if(path == "CalcMenu.txt")
+            else if (heleTxt[0] == "Calc Dansk Version")
             {
                 bind = 2;
             }
 
-            string[] heleTxt = File.ReadAllLines(path);
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
             englishTxt = heleTxt.Skip(heleTxt.Length / 2).ToArray();
 
