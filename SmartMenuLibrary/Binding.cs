@@ -14,8 +14,8 @@ namespace SmartMenuLibrary
         {
             double[] numbers = new double[] {4.5, 90.2, 2.9, 15.8, 938.0};
             SmartMenu smart = new SmartMenu();
-
-            if(smart.bind == 1)
+            int bindcopy = smart.bind;
+            if(bindcopy == 1)
             {
                 do
                 {
