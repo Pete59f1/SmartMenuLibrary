@@ -25,7 +25,7 @@ namespace SmartMenuLibrary
                 bind = 2;
             }
 
-            string[] heleTxt = System.IO.File.ReadAllLines(@"..\..\" + path);
+            string[] heleTxt = System.IO.File.ReadAllLines(@"C:\Users\Niclas\Desktop\SmartMenuLibrary\SmartMenuLibrary" + path);
             danskTxt = heleTxt.Take(heleTxt.Length / 2).ToArray();
             englishTxt = heleTxt.Skip(heleTxt.Length / 2).ToArray();
 
