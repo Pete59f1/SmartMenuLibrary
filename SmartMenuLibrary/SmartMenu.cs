@@ -19,11 +19,11 @@ namespace SmartMenuLibrary
         {
             string[] heleTxt = File.ReadAllLines(path);
 
-            if (heleTxt[0] == "Spec Dansk version")
+            if (heleTxt[0] == "Spec Dansk version:")
             {
                 bind = 1;
             }
-            else if (heleTxt[0] == "Calc Dansk Version")
+            else if (heleTxt[0] == "Calc Dansk Version:")
             {
                 bind = 2;
             }

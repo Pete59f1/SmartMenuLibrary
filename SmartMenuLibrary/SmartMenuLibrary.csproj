@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CalculatorLibrary">
-      <HintPath>..\..\CalculatorLibrary\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll</HintPath>
+      <HintPath>..\..\..\CalculatorLibrary\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll</HintPath>
     </Reference>
     <Reference Include="FunctionLibrary">
-      <HintPath>..\..\SmartMenuApp Projekt\FunctionLibrary\bin\Debug\FunctionLibrary.dll</HintPath>
+      <HintPath>..\..\..\FunctionLibrary\bin\Debug\FunctionLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
