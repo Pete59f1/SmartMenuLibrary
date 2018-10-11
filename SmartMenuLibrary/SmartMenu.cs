@@ -67,7 +67,7 @@ namespace SmartMenuLibrary
 
                 Console.Clear();
                 printMenu(userInputSprog);
-                bind.chooseFucntion(userInput);
+                bind.chooseFucntion(userInput, this.bind, userInputSprog);
                 
             } while (userInput != "0");
         }

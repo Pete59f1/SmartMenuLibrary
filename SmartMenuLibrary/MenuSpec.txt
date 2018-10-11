@@ -1,4 +1,4 @@
-﻿Dansk version:
+﻿Spec Dansk version:
 Vælg noget eller 0 for at afslutte
 1. Beregn areal og omkreds af rektangel;1
 2. Beregn talsum;2

@@ -1,4 +1,4 @@
-﻿Dansk Version
+﻿Calc Dansk Version:
 Vælg menu punkt mellem 1 og 8 eller 0 for at afslutte
 1. Plus;1
 2. Minus;2

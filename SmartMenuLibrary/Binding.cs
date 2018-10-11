@@ -10,121 +10,113 @@ namespace SmartMenuLibrary
 {
     class Binding
     {
-        public void chooseFucntion(string callID)
+        public void chooseFucntion(string callID, int bind,string userInputSprog)
         {
-            double[] numbers = new double[] {4.5, 90.2, 2.9, 15.8, 938.0};
-            SmartMenu smart = new SmartMenu();
-            int bindcopy = smart.bind;
-            if(bindcopy == 1)
+            double[] numbers = new double[] { 4.5, 90.2, 2.9, 15.8, 938.0 };
+            if (bind == 1)
             {
-                do
+                switch (callID)
                 {
-                    switch (callID)
-                    {
-                        case "1":
-                            Functions.DoThis();
-                            break;
+                    case "1":
+                        Console.WriteLine(Functions.DoThis());
+                        break;
 
-                        case "2":
-                            Functions.DoThat();
-                            break;
+                    case "2":
+                        Console.WriteLine(Functions.DoThat());
+                        break;
 
-                        case "3":
-                            Functions.DoSomething("Did something");
-                            break;
+                    case "3":
+                        Console.WriteLine(Functions.DoSomething("Did something"));
+                        break;
 
-                        case "4":
-                            Functions.GetTheAnswerToLifeTheUniverseAndEverything();
-                            break;
+                    case "4":
+                        Console.WriteLine(Functions.GetTheAnswerToLifeTheUniverseAndEverything());
+                        break;
 
-                        case "0":
-                            if(smart.userInputSprog == "d")
-                            {
-                                Console.WriteLine("Stopper program");
-                            }
-                            else if(smart.userInputSprog == "e")
-                            {
-                                Console.WriteLine("Stopping program");
-                            }
-                            break;
+                    case "0":
+                        if (userInputSprog == "d")
+                        {
+                            Console.WriteLine("Stopper program");
+                        }
+                        else if (userInputSprog == "e")
+                        {
+                            Console.WriteLine("Stopping program");
+                        }
+                        break;
 
-                        default:
-                            if(smart.userInputSprog == "d")
-                            {
-                                Console.WriteLine("Forstår ikke");
-                            }
-                            else if(smart.userInputSprog == "e")
-                            {
-                                Console.WriteLine("Don't understand");
-                            }
-                            break;
-                    }
-                } while (callID != "0");
+                    default:
+                        if (userInputSprog == "d")
+                        {
+                            Console.WriteLine("Forstår ikke");
+                        }
+                        else if (userInputSprog == "e")
+                        {
+                            Console.WriteLine("Don't understand");
+                        }
+                        break;
+                }
             }
-
-            else if(smart.bind == 2)
+            
+            else if (bind == 2)
             {
-                do
-                {
-                    switch (callID)
+                switch (callID)
                     {
                         case "1":
-                            Calculator.Add(int.Parse(callID), int.Parse(callID));
+                            Console.WriteLine(Calculator.Add(double.Parse(callID), double.Parse(callID)));
                             break;
 
                         case "2":
-                            Calculator.Subtract(int.Parse(callID), int.Parse(callID));
+                            Console.WriteLine(Calculator.Subtract(double.Parse(callID), double.Parse(callID)));
                             break;
 
                         case "3":
-                            Calculator.Multiply(int.Parse(callID), int.Parse(callID));
+                            Console.WriteLine(Calculator.Multiply(double.Parse(callID), double.Parse(callID)));
                             break;
 
                         case "4":
-                            Calculator.Divide(int.Parse(callID), int.Parse(callID));
+                            Console.WriteLine(Calculator.Divide(double.Parse(callID), double.Parse(callID)));
                             break;
 
                         case "5":
-                            Calculator.Sum(numbers);
+                            Console.WriteLine(Calculator.Sum(numbers));
                             break;
 
                         case "6":
-                            Calculator.Minimum(numbers);
+                            Console.WriteLine(Calculator.Minimum(numbers));
                             break;
 
                         case "7":
-                            Calculator.Maximum(numbers);
+                            Console.WriteLine(Calculator.Maximum(numbers));
                             break;
 
                         case "8":
-                            Calculator.Average(numbers);
+                            Console.WriteLine(Calculator.Average(numbers));
                             break;
 
                         case "0":
-                            if (smart.userInputSprog == "d")
+                            if (userInputSprog == "d")
                             {
                                 Console.WriteLine("Stopper program");
                             }
-                            else if (smart.userInputSprog == "e")
+                            else if (userInputSprog == "e")
                             {
                                 Console.WriteLine("Stopping program");
                             }
                             break;
 
                         default:
-                            if (smart.userInputSprog == "d")
+                            if (userInputSprog == "d")
                             {
                                 Console.WriteLine("Forstår ikke");
                             }
-                            else if (smart.userInputSprog == "e")
+                            else if (userInputSprog == "e")
                             {
                                 Console.WriteLine("Don't understand");
                             }
                             break;
                     }
-                } while (callID != "0");
             }
-            
+
         }
     }
 }
